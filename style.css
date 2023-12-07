@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  overflow-x: hidden;
+}
+html{
+  scroll-behavior: smooth;
+}
+#page1{
+  background-color: black;
+}
+#page2{
+  background-color: #300605;
+}
+#main{
+  background: url(home1.gif);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+#navBar{
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  right: -250px;
+  top: 0;
+  background: #b33730;
+  z-index: 2;
+  transition: 0.5s;
+  font-family: Patua One, sans-serif;
+  font-size: 30px;
+}
+
+.main-text{
+  text-align: center;
+  color: white;
+  font-family: Patua One, sans-serif;
+  font-size: 25px;
+  padding-top: 240px;
+  line-height: 1.5em;
+}
+
+nav ul li{
+  display: inline-block;
+  margin-right: 50px;
+  list-style: none;
+  margin: 50 px 20 px;
+  padding-top: 150px;
+}
+nav ul li a{
+  text-decoration: none;
+  font-size: 30px;
+  color: black ;
+}
+#menuBtn{
+  width: 50px;
+  height: 50px;
+  background: #b33730;
+  text-align: center;
+  position: fixed;
+  right: 30px;
+  top: 20px;
+  border-radius: 3px;
+  z-index: 3;
+  cursor: pointer;
+}
+#menuBtn img{
+  width: 20px;
+  margin-top: 15px;
+}
+
+#content {
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.content-text h1,
+.content-text2 h1,
+.content-text3 h1 {
+  color: #b33730;
+  font-size: 400px;
+  height: 70vh;
+  line-height: 1.2em;
+  text-align: center;
+  font-family: Patua One, sans-serif;
+}
+.content-text p,
+.content-text2 p,
+.content-text3 p {
+  font-size: 40px;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0; 
+  flex: 1; 
+  font-family: Patua One, sans-serif;
+}
+.content-text3 p{
+  padding-bottom: 150px;
+}
+.container2 {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.image-wrapper,
+.imagewrapper2 {
+    flex: 0 0 50%; 
+}
+.image-wrapper img:first-child{
+  flex: 0 0 50%;
+  width: 800px;
+  height: auto;
+}
+.imagewrapper2 img:first-child{
+  flex: 0 0 50%;
+  width: 900px;
+  height: auto;
+}
+.text-wrapper-left,
+.text-wrapper-right {
+    flex: 0 0 50%; 
+}
+
+.text-wrapper-left {
+    order: 2; 
+    text-align: center;
+    padding-top: 90px;
+    padding-right: 10px;
+    font-size: 40px;
+    color: white;
+    line-height: 1.5em;
+    font-family: Patua One, sans-serif;
+}
+
+.image-wrapper {
+    order: 1; 
+}
+
+.text-wrapper-right {
+    order: 3;
+    text-align: center;
+    padding-top: 90px;
+    font-size: 35px;
+    color: white;
+    font-family: Patua One, sans-serif;
+    line-height: 2em;
+}
+
+.imagewrapper2 {
+    order: 4; 
+}
+#red{
+  color: #b33730;
+}
+
+#page3{
+  background-color: #8a5125;
+}
+#firstcontent2 h1{
+  text-align: center;
+  text-decoration: underline;
+  line-height: 5em;
+  color: #f5ddda;
+  font-size: 150px;
+  font-family: Patua One, sans-serif;
+}
+.contents h1{
+  color: #f5ddda;
+  text-align: center;
+  font-size: 150px;
+  font-family: Patua One, sans-serif;
+}
+.contents h2{
+  color: #b33730;
+  text-align: center;
+  font-size: 50px;
+  padding-bottom: 30px;
+  font-family: Patua One, sans-serif;
+}
+.thumbnail {
+  width: 33.3%;
+  height: 330px;
+  object-fit: contain;
+}
+
+.bookscontainer{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 30px;
+}
+.book{
+  position: relative;
+}
+.book img{
+  padding: 10px;
+  width: 400px;
+  height: auto;
+}
+
+.book-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-80%, -50%);
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  text-align: center;
+  background: none;
+  font-size: 30px;
+  font-family: Patua One, sans-serif;
+}
+.content3{
+  font-size: 5.5vw;
+  text-align: center;
+  padding-bottom: 50px;
+  color: #f5ddda;
+  font-family: Patua One, sans-serif;
+}
+.origin{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+.psychologist{
+  flex-basis: 48%;
+  text-align: center;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  color: white;
+  position: relative;
+}
+.psychologist img{
+  width: 500px;
+  border-radius: 7px;
+}
+.overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 7px;
+  cursor: pointer;
+  background: linear-gradient(rgba(0, 0, 0, 0.5),#b33730);
+  opacity: 0;
+  transition: 1s;
+}
+.psychologist:hover .overlay{
+  opacity: 1;
+} 
+.description{
+  width: 85%;
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  opacity: 0;
+  transform: translate(-50px);
+  transition: 1s;
+  font-family: Patua One, sans-serif;
+}
+hr{
+  background: white;
+  height: 2px ;
+  border: 0;
+  margin: 15px auto;
+  width: 60%;
+}
+.description h3{
+  font-size: 30px;
+}
+.description p{
+  font-size: 30px;
+  line-height: 1.25em;
+}
+.psychologist:hover .description{
+  bottom: 40%;
+  opacity: 1;
+} 
+#types{
+  width: 100%;
+  padding: 70px 0;
+}
+.contents{
+  color: #b33730;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.contents h1{
+  color:#f5ddda;
+}
+.contents p{
+  font-size: 25px;
+  font-family: Patua One, sans-serif;
+}
+.types-row{
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.types-col{
+  flex-basis: 28%;
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px 3px darkred;
+  cursor: pointer;
+}
+.types-col p{
+  color: white;
+  font-size: 25px;
+  line-height: 2em;
+  font-family: Patua One, sans-serif;
+}
+.types-col h1{
+  color: #ff624a;
+  text-decoration: underline;
+  text-align: center;
+  line-height: 2em;
+  font-family: Patua One, sans-serif;
+}
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkmark {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+
+.custom-checkbox input:checked + .checkmark:after {
+  content: '\2713';
+  display: block;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+}
+
+.site-footer {
+  background-color:#b33730 ; 
+  color: #fff; 
+  padding: 20px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-footer p {
+  font-size: 14px;
+  text-align: center;
+}
+#small{
+  font-size: 28px;
+  line-height: 1.5em;
+  padding-right: 40px;
+}
+#smaller{
+  width: 750px;
+  height: 500px;
+}
+#highlight{
+  color: red;
+}
+#bloody{
+  color: #f7a497;
+}
+.closedBook{
+  transition: transform 0.3s;
+}
+.closedBook:hover{
+  transform: scale(1.1);
+}
